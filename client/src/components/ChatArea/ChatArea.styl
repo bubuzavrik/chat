@@ -1,0 +1,121 @@
+.chat
+  padding 0
+  margin 0
+  width 100%
+  height calc(100vh - 93px - 80px)
+  position relative
+  .fa-2x
+    font-size 1.5em
+  .form-group
+    margin 0
+  .message
+    padding 0
+    margin 0
+    background-color #f7f7f7
+    overflow-y auto
+    height calc(100vh - 93px - 80px)
+    &-previous
+      margin 0
+      padding 0
+      height auto
+      width 100%
+    &-body
+      margin 0
+      padding 0
+    &-main
+      &-receiver
+        width 95%
+        padding 5px 15px
+      &-sender
+        padding 5px 15px
+        margin-left 5%
+        width 95%
+    &-text
+      font-family "Helvetica Neue", Helvetica, Arial, sans-serif
+      margin 0
+      padding 5px
+      padding-bottom 0
+      white-space pre-wrap
+      word-wrap break-word
+      font-weight 200
+      font-size 14px
+      border none
+      background none
+    &-user
+      position absolute
+      top 5px
+      font-size 14px
+      color #999
+      &_left
+        left 15px
+      &_right
+        right 15px
+  .previous
+    font-size 15px
+    text-align center
+    padding 10px
+    span
+      font-weight 700
+  .receiver
+    position relative
+    padding 25px 10px 7px
+    border-radius 10px 10px 10px 0
+    background #d2dbef
+    font-size 12px
+    text-shadow 0 1px 1px rgba(0, 0, 0, 0.2)
+    word-wrap break-word
+  .sender
+    position relative
+    background #dcf8c6
+    border-radius 10px 10px 0 10px
+    padding 25px 10px 7px
+    font-size 12px
+    text-shadow 0 1px 1px rgba(0, 0, 0, 0.2)
+    word-wrap break-word
+    text-align right
+  .reply
+    width 100%
+    height 80px
+    background-color #24292e
+    padding 10px 5px 10px 5px
+    margin 0
+    z-index 1000
+    &-send
+      padding 5px
+      height 58px
+      display flex
+      justify-content center
+      align-items center
+      i
+        text-align center
+        padding 5px
+        color #93918f
+        cursor pointer
+        &:active
+          color white
+    &-main
+      padding: 2px 5px
+      .form-control
+        width 100%
+        resize none
+        overflow hidden
+        padding 5px
+        outline none
+        border none
+        text-indent 5px
+        box-shadow none
+        height 100%
+        font-size 16px
+        &:focus
+          outline none
+          border none
+          text-indent 5px
+          box-shadow none
+        &::placeholder
+          font-weight 600
+          font-style italic
+@media (max-width 768px)
+  .chat
+    height calc(100vh - 127px - 80px)
+    .message
+      height calc(100vh - 127px - 80px)

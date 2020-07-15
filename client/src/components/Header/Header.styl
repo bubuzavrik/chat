@@ -1,0 +1,40 @@
+.header-wrapper
+  z-index 1
+  padding 12px 0
+  color rgba(255,255,255,0.75)
+  background-color #24292e
+.header
+  &_right
+    text-align right
+    margin-top 20px
+    margin-bottom 10px
+  &__form
+    &_login
+      input
+      button
+        margin-left 15px
+  .has-error
+    position relative
+    .form-control
+      border-width 2px
+  .help-block
+    position absolute
+    right 0
+@media (max-width 768px)
+  .header
+    display flex
+    flex-direction column
+    align-items center
+    &__title
+      margin 0
+      text-align center
+    &__form
+      &_login
+        input
+          margin 10px 0
+    &_right
+      button
+        width 100%
+        margin 0
+    .help-block
+      display none
